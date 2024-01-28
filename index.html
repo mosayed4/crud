@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./crud.css" />
+  </head>
+  <body>
+    <button id="moon">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button id="sun">
+      <i class="fas fa-sun"></i>
+    </button>
+    <div class="container">
+      <label>Product name</label>
+      <input type="text" class="inputField input" />
+      <label>Product Price</label>
+      <input type="number" class="inputField input" />
+      <label>Product description</label>
+      <textarea class="input"> </textarea>
+      <label id="upload">Product image</label>
+      <input type="file" id="img" />
+      <p id="warning">please fill all the fields</p>
+      <button id="addProduct">add product</button>
+      <button id="editProduct">edit product</button>
+    </div>
+    <input
+      type="search"
+      id="search"
+      class="inputField input"
+      onkeyup="productSearch()"
+    />
+    <div class="products"></div>
+    <div id="up" style="display: none">
+      <button id="scrollUP">^</button>
+    </div>
+    <script src="./crud.js"></script>
+  </body>
+</html>

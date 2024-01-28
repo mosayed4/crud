@@ -1,0 +1,176 @@
+.inputField,
+textarea {
+  width: 99%;
+  margin: 7px auto;
+  margin-bottom: 15px;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+textarea {
+  height: 80px;
+}
+.inputField:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 0px 3px rgb(173, 230, 227);
+}
+#addProduct,
+#editProduct {
+  display: block;
+  margin-top: 20px;
+  background-color: navy;
+  color: white;
+  padding: 7px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  margin-top: 20px;
+  position: relative;
+}
+#moon,
+#sun {
+  font-size: 20px;
+  width: 60px;
+  border-radius: 7px;
+}
+#moon {
+  margin-right: 10px;
+}
+
+#sun {
+  background-color: yellow;
+}
+#sun:focus {
+  background-color: black;
+  color: yellow;
+}
+#moon:focus {
+  background-color: black;
+  color: white;
+}
+
+.product {
+  height: 350px;
+  width: 25%;
+  border-radius: 5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.productContainer {
+  height: 100%;
+  width: 100%;
+  border: 2px solid navy;
+  border-radius: 5%;
+  position: relative;
+}
+.head {
+  height: 70%;
+}
+img {
+  height: 70%;
+  width: 100%;
+}
+.title {
+  height: 30%;
+}
+.title h3 {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.title p {
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.body {
+  height: 30%;
+}
+.body p {
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 35px;
+}
+#delete {
+  position: absolute;
+  bottom: 0px;
+  background-color: red;
+  color: white;
+  width: 40%;
+  height: 30px;
+  border-bottom-left-radius: 14px;
+  box-sizing: border-box;
+}
+#edit {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40%;
+  background-color: green;
+  color: white;
+  border-bottom-right-radius: 14px;
+  height: 30px;
+}
+
+p {
+  margin: 0px;
+}
+#search {
+  margin-top: 60px;
+}
+#editProduct {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+}
+#warning {
+  background-color: red;
+  margin: 8px;
+  padding: 8px;
+  color: white;
+  display: none;
+}
+#up {
+  margin-top: 45px;
+  position: relative;
+}
+#scrollUP {
+  font-size: 45px;
+  background-color: rgba(128, 128, 128, 0.628);
+  border: 2px solid navy;
+  color: navy;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+}
+#scrollUP:hover {
+  cursor: pointer;
+  background-color: rgb(79, 79, 79);
+}
+button {
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .product {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .product {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .product {
+    width: 33%;
+  }
+}
